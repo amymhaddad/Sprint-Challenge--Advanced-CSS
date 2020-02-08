@@ -1,1 +1,59 @@
 // Navigation code here
+
+.site-header {
+    background-color: lightgray;
+
+    h1 {
+        text-align: center;
+        padding-top: 34px;
+        font-size: 35px;
+        padding-bottom: 15px;
+    }
+
+    .site-nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 10px;
+
+        a{
+            text-decoration: none;
+            font-size: 20px;
+            padding: 20px;
+            color: gray;
+            
+
+            &:hover {
+                color: navy;
+                background-color: lightgray;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media @phone {
+    .site-header {
+    
+        h1 {
+            text-align: center;
+            padding-top: 10px;
+            font-size: 25px;
+            padding-bottom: 5px;
+        }
+    
+        .site-nav ul {
+            justify-content: space-between;
+            padding: none;
+        
+            a{
+                display: inline-block;
+                text-decoration: none;
+                font-size: 15px;
+                padding: 5px;
+                
+            }
+        }
+    }
+}
+    
