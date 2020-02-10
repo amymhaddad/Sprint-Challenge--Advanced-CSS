@@ -9,6 +9,28 @@
   border-radius: 20px;
   height: 100%;
 }
+.info-box {
+  border: 3px solid black;
+  margin-top: 10px;
+  padding: 20px;
+  width: 48%;
+  border-radius: 5px;
+}
+.about-page-headers {
+  font-size: 28px;
+  padding-bottom: 15px;
+  padding-top: 10px;
+}
+.nav-fixed-position {
+  position: fixed;
+  width: 100%;
+  opacity: 0.5;
+  top: 0;
+}
+.user-input-boxes {
+  border: 2px solid navy;
+  margin-bottom: 5px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -228,6 +250,16 @@ footer {
   justify-content: center;
   align-items: center;
 }
+body {
+  position: relative;
+  padding-top: 115px;
+}
+.site-header {
+  position: fixed;
+  width: 100%;
+  opacity: 0.5;
+  top: 0;
+}
 .home .intro h2 {
   padding: 15px;
 }
@@ -323,5 +355,138 @@ footer {
   .home .walk .walk-img {
     width: 100%;
     margin-left: 0%;
+  }
+}
+.site-header {
+  position: fixed;
+  width: 100%;
+  opacity: 0.5;
+  top: 0;
+}
+.top-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.top-content .intro {
+  width: 48%;
+  line-height: 1.1;
+}
+.top-content .intro h1 {
+  font-size: 28px;
+  padding-bottom: 15px;
+  padding-top: 10px;
+}
+.top-content .intro p {
+  line-height: 1.6;
+}
+.top-content .intro-image {
+  width: 48%;
+}
+.top-content .intro-image img {
+  width: 92%;
+  border-radius: 5px;
+}
+.middle-content img {
+  width: 100%;
+  border-radius: 5px;
+}
+.bottom-content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.bottom-content .content-box {
+  border: 3px solid black;
+  margin-top: 10px;
+  padding: 20px;
+  width: 48%;
+  border-radius: 5px;
+}
+.bottom-content .content-box h1 {
+  font-size: 28px;
+  padding-bottom: 15px;
+  padding-top: 10px;
+}
+.bottom-content .content-box p {
+  padding-bottom: 10px;
+}
+.bottom-content .content-box .btn {
+  width: 140px;
+  height: 35px;
+  border: 3px solid navy;
+  background-color: red;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  padding-top: 8px;
+  border-radius: 5px;
+}
+.bottom-content .content-box .btn:hover {
+  background-color: navy;
+  color: red;
+}
+.form ul label {
+  float: left;
+  width: 100px;
+  text-align: right;
+  margin-right: 15px;
+  font-size: 15px;
+}
+.form ul li:last-of-type {
+  margin-left: 115px;
+}
+.form ul li:last-of-type .btn {
+  width: 140px;
+  height: 35px;
+  border: 3px solid navy;
+  background-color: red;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  padding-top: 8px;
+  border-radius: 5px;
+}
+.form ul li:last-of-type .btn:hover {
+  background-color: navy;
+  color: red;
+}
+input[type='email'],
+input[type="text"] {
+  border: 2px solid navy;
+  margin-bottom: 5px;
+}
+textarea {
+  border: 2px solid navy;
+  margin-bottom: 5px;
+}
+@media (max-width:500px) {
+  .container {
+    margin: 5px;
+  }
+  .top-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .top-content .intro {
+    width: 100%;
+  }
+  .top-content .intro-image {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 5px;
+  }
+  .bottom-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .bottom-content .content-box {
+    width: 100%;
+  }
+  footer {
+    padding-bottom: 5px;
   }
 }
